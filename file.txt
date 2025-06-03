@@ -1,0 +1,4 @@
+Hello world
+42 is the answer
+Get next line is fun
+Last line without newline
