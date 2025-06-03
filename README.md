@@ -22,7 +22,7 @@ It must be able to manage multiple file descriptors simultaneously, preserve buf
 ---
 
 ## 📂 Project Structure
-
+```
 get_next_line/
 ├── get_next_line.c # Core logic
 ├── get_next_line_utils.c # Helper functions
@@ -33,7 +33,7 @@ get_next_line/
 ├── main.c # Test file (optional)
 ├── Makefile
 └── README.md
-
+```
 
 ---
 
@@ -63,3 +63,32 @@ while ((line = get_next_line(fd)) != NULL)
 ```
 gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c main.c
 ```
+## 📦 Constraints
+Must work for any BUFFER_SIZE
+
+Only allowed functions: read, malloc, free
+
+No memory leaks allowed
+
+Must support multiple file descriptors (bonus)
+
+You cannot read the whole file at once
+
+## 🧠 What I Learned
+Managing buffers and memory across function calls
+
+Dealing with file descriptors and how read() behaves
+
+Implementing a function that can retain state between calls (via static variables)
+
+Handling newline and EOF edge cases properly
+
+Writing clean, modular, and testable code
+
+Reading one line at a time without reading the full file
+
+Bonus: managing multiple FDs in parallel with proper memory isolation
+
+## 👨‍💻 Author
+**Mehdi Adel Achouba**  
+**42 Paris – Login: machouba**
