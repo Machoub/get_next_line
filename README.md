@@ -63,16 +63,6 @@ while ((line = get_next_line(fd)) != NULL)
 ```
 gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c main.c
 ```
-## 📦 Constraints
-Must work for any BUFFER_SIZE
-
-Only allowed functions: read, malloc, free
-
-No memory leaks allowed
-
-Must support multiple file descriptors (bonus)
-
-You cannot read the whole file at once
 
 ## 🧠 What I Learned
 Managing buffers and memory across function calls
